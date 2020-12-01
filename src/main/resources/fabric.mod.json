@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "replaceitem-minecraft-midiplayer",
+  "version": "${version}",
+  "name": "Midiplayer",
+  "description": "Play midi files with noteblock sounds",
+  "authors": [
+    "replaceitem"
+  ],
+  "contact": {
+    "website": "https://github.com/replaceitem"
+  },
+  "license": "MIT",
+  "icon": "assets/replaceitem/minecraft/midiplayer/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "replaceitem.midiplayer.Midiplayer"
+    ]
+  },
+  "mixins": [
+    "replaceitem.midiplayer.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.10.0+build.209",
+    "minecraft": "1.16.3"
+  }
+}
